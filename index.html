@@ -1,188 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Samuel Dolapo Adebiyi — Software Engineer</title>
 
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui']
+          }
+        }
+      }
+    }
+  </script>
+
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <style>
-    :root {
-      --bg: #0b0d10;
-      --card: #12151c;
-      --text: #e6e8eb;
-      --muted: #9aa4b2;
-      --accent: #4f8cff;
+  <script>
+    // Theme toggle
+    function toggleTheme() {
+      const html = document.documentElement;
+      html.classList.toggle('dark');
+      localStorage.theme = html.classList.contains('dark') ? 'dark' : 'light';
     }
 
-    * {
-      box-sizing: border-box;
+    if (localStorage.theme === 'light') {
+      document.documentElement.classList.remove('dark');
     }
-
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background: linear-gradient(180deg, #0b0d10, #0e1117);
-      color: var(--text);
-      line-height: 1.6;
-    }
-
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 80px 24px;
-    }
-
-    header {
-      margin-bottom: 80px;
-    }
-
-    h1 {
-      font-size: 3rem;
-      font-weight: 700;
-      margin-bottom: 12px;
-      letter-spacing: -0.03em;
-    }
-
-    .subtitle {
-      font-size: 1.2rem;
-      color: var(--muted);
-      max-width: 700px;
-    }
-
-    section {
-      margin-bottom: 72px;
-    }
-
-    h2 {
-      font-size: 1.6rem;
-      margin-bottom: 20px;
-      font-weight: 600;
-    }
-
-    .card {
-      background: var(--card);
-      border-radius: 16px;
-      padding: 24px;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.35);
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
-    }
-
-    .tag {
-      display: inline-block;
-      background: rgba(79,140,255,0.12);
-      color: var(--accent);
-      padding: 6px 12px;
-      border-radius: 999px;
-      font-size: 0.85rem;
-      margin: 6px 6px 0 0;
-    }
-
-    footer {
-      text-align: center;
-      color: var(--muted);
-      font-size: 0.9rem;
-      margin-top: 80px;
-    }
-
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  </script>
 </head>
-<body>
 
-  <div class="container">
-    <header>
-      <h1>Samuel Dolapo Adebiyi</h1>
-      <p class="subtitle">
-        Results-driven Software Engineer specialising in full-stack development,
-        DevOps, and scalable cloud-based systems.
-      </p>
+<body class="bg-gray-50 dark:bg-[#0b0d10] text-gray-900 dark:text-gray-100 font-sans">
+
+  <div class="max-w-5xl mx-auto px-6 py-16">
+
+    <!-- Header -->
+    <header class="flex justify-between items-start mb-20">
+      <div>
+        <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-4">
+          Samuel Dolapo Adebiyi
+        </h1>
+        <p class="text-gray-600 dark:text-gray-400 max-w-2xl">
+          Results-driven Software Engineer specialising in full-stack development,
+          DevOps, and scalable cloud-based systems.
+        </p>
+      </div>
+
+      <button
+        onclick="toggleTheme()"
+        class="text-sm px-4 py-2 rounded-full border border-gray-300 dark:border-gray-700 hover:bg-gray-200 dark:hover:bg-gray-800 transition">
+        Toggle theme
+      </button>
     </header>
 
-    <section>
-      <h2>About</h2>
-      <div class="card">
+    <!-- About -->
+    <section class="mb-20">
+      <h2 class="text-2xl font-semibold mb-4">About</h2>
+      <div class="bg-white dark:bg-[#12151c] rounded-2xl p-6 shadow-lg">
         <p>
-          I’m a software engineer based in London with experience delivering secure,
-          high-performance applications across SaaS, fintech, and enterprise platforms.
-          I enjoy modernising legacy systems, building reliable APIs, and automating
+          I’m a London-based software engineer with experience delivering secure,
+          high-performance applications across SaaS, fintech, and enterprise systems.
+          I enjoy modernising legacy platforms, building robust APIs, and automating
           infrastructure with a security-first mindset.
         </p>
       </div>
     </section>
 
-    <section>
-      <h2>Core Skills</h2>
-      <div class="card">
-        <span class="tag">PHP</span>
-        <span class="tag">Laravel</span>
-        <span class="tag">JavaScript</span>
-        <span class="tag">React</span>
-        <span class="tag">Vue</span>
-        <span class="tag">AWS</span>
-        <span class="tag">MySQL</span>
-        <span class="tag">SQL Server</span>
-        <span class="tag">Docker</span>
-        <span class="tag">CI/CD</span>
-        <span class="tag">DevOps</span>
-        <span class="tag">REST APIs</span>
+    <!-- Skills -->
+    <section class="mb-20">
+      <h2 class="text-2xl font-semibold mb-4">Core Skills</h2>
+      <div class="bg-white dark:bg-[#12151c] rounded-2xl p-6 shadow-lg flex flex-wrap gap-2">
+        <span class="px-3 py-1 rounded-full text-sm bg-blue-100 dark:bg-blue-500/10 text-blue-600 dark:text-blue-400">PHP</span>
+        <span class="px-3 py-1 rounded-full text-sm bg-blue-100 dark:bg-blue-500/10">Laravel</span>
+        <span class="px-3 py-1 rounded-full text-sm bg-blue-100 dark:bg-blue-500/10">JavaScript</span>
+        <span class="px-3 py-1 rounded-full text-sm bg-blue-100 dark:bg-blue-500/10">React</span>
+        <span class="px-3 py-1 rounded-full text-sm bg-blue-100 dark:bg-blue-500/10">Vue</span>
+        <span class="px-3 py-1 rounded-full text-sm bg-blue-100 dark:bg-blue-500/10">AWS</span>
+        <span class="px-3 py-1 rounded-full text-sm bg-blue-100 dark:bg-blue-500/10">MySQL</span>
+        <span class="px-3 py-1 rounded-full text-sm bg-blue-100 dark:bg-blue-500/10">Docker</span>
+        <span class="px-3 py-1 rounded-full text-sm bg-blue-100 dark:bg-blue-500/10">CI/CD</span>
+        <span class="px-3 py-1 rounded-full text-sm bg-blue-100 dark:bg-blue-500/10">DevOps</span>
       </div>
     </section>
 
-    <section>
-      <h2>Selected Work</h2>
-      <div class="grid">
-        <div class="card">
-          <strong>HouseAndz Properties</strong>
-          <p>
-            Property platform built with PHP and MySQL to simplify buying,
-            selling, and renting workflows.
+    <!-- Work -->
+    <section class="mb-20">
+      <h2 class="text-2xl font-semibold mb-6">Selected Work</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white dark:bg-[#12151c] rounded-2xl p-6 shadow-lg">
+          <h3 class="font-semibold mb-2">HouseAndz Properties</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400">
+            Property platform built with PHP and MySQL to simplify buying, selling, and renting workflows.
           </p>
         </div>
 
-        <div class="card">
-          <strong>Dominion Cooperative</strong>
-          <p>
-            Collaborative platform using React and Tailwind to streamline
-            cooperative organisation operations.
+        <div class="bg-white dark:bg-[#12151c] rounded-2xl p-6 shadow-lg">
+          <h3 class="font-semibold mb-2">Dominion Cooperative</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400">
+            React and Tailwind-based platform for cooperative organisation management.
           </p>
         </div>
 
-        <div class="card">
-          <strong>ViralSweep (Clearer.io)</strong>
-          <p>
-            Took ownership of a legacy SaaS platform post-acquisition,
-            modernising infrastructure and improving deployment reliability.
+        <div class="bg-white dark:bg-[#12151c] rounded-2xl p-6 shadow-lg">
+          <h3 class="font-semibold mb-2">ViralSweep (Clearer.io)</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400">
+            Owned and modernised a legacy SaaS platform post-acquisition, improving reliability and deployments.
           </p>
         </div>
       </div>
     </section>
 
+    <!-- Contact -->
     <section>
-      <h2>Contact</h2>
-      <div class="card">
-        <p>Email: <a href="mailto:Samueladebiyi.g@gmail.com">Samueladebiyi.g@gmail.com</a></p>
-        <p>Location: London, England (Open to relocation)</p>
+      <h2 class="text-2xl font-semibold mb-4">Contact</h2>
+      <div class="bg-white dark:bg-[#12151c] rounded-2xl p-6 shadow-lg space-y-2">
+        <p>Email: <a class="text-blue-600 dark:text-blue-400" href="mailto:Samueladebiyi.g@gmail.com">Samueladebiyi.g@gmail.com</a></p>
+        <p>GitHub: <a class="text-blue-600 dark:text-blue-400" href="https://github.com/Samuel-DA" target="_blank">github.com/Samuel-DA</a></p>
+        <p>LinkedIn: <a class="text-blue-600 dark:text-blue-400" href="https://www.linkedin.com/in/samuel-adebiyi-81728b176" target="_blank">linkedin.com/in/samuel-adebiyi</a></p>
+        <p class="pt-4 text-sm text-gray-500">
+          <a href="/privacy.html">Privacy Policy</a>
+        </p>
       </div>
     </section>
 
-    <footer>
-      © 2026 Samuel Dolapo Adebiyi · Used for Google Play developer verification
+    <footer class="text-center text-sm text-gray-500 mt-20">
+      © 2026 Samuel Dolapo Adebiyi · Google Play developer verification
     </footer>
-  </div>
 
+  </div>
 </body>
 </html>
