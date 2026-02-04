@@ -23,7 +23,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <script>
-    // Theme toggle
     function toggleTheme() {
       const html = document.documentElement;
       html.classList.toggle('dark');
@@ -54,7 +53,8 @@
 
       <button
         onclick="toggleTheme()"
-        class="text-sm px-4 py-2 rounded-full border border-gray-300 dark:border-gray-700 hover:bg-gray-200 dark:hover:bg-gray-800 transition">
+        class="text-sm px-4 py-2 rounded-full border border-gray-300 dark:border-gray-700
+               hover:bg-gray-200 dark:hover:bg-gray-800 transition">
         Toggle theme
       </button>
     </header>
@@ -75,43 +75,148 @@
     <!-- Skills -->
     <section class="mb-20">
       <h2 class="text-2xl font-semibold mb-4">Core Skills</h2>
-      <div class="bg-white dark:bg-[#12151c] rounded-2xl p-6 shadow-lg flex flex-wrap gap-2">
-        <span class="px-3 py-1 rounded-full text-sm bg-blue-100 dark:bg-blue-500/10 text-blue-600 dark:text-blue-400">PHP</span>
-        <span class="px-3 py-1 rounded-full text-sm bg-blue-100 dark:bg-blue-500/10">Laravel</span>
-        <span class="px-3 py-1 rounded-full text-sm bg-blue-100 dark:bg-blue-500/10">JavaScript</span>
-        <span class="px-3 py-1 rounded-full text-sm bg-blue-100 dark:bg-blue-500/10">React</span>
-        <span class="px-3 py-1 rounded-full text-sm bg-blue-100 dark:bg-blue-500/10">Vue</span>
-        <span class="px-3 py-1 rounded-full text-sm bg-blue-100 dark:bg-blue-500/10">AWS</span>
-        <span class="px-3 py-1 rounded-full text-sm bg-blue-100 dark:bg-blue-500/10">MySQL</span>
-        <span class="px-3 py-1 rounded-full text-sm bg-blue-100 dark:bg-blue-500/10">Docker</span>
-        <span class="px-3 py-1 rounded-full text-sm bg-blue-100 dark:bg-blue-500/10">CI/CD</span>
-        <span class="px-3 py-1 rounded-full text-sm bg-blue-100 dark:bg-blue-500/10">DevOps</span>
+
+      <div class="bg-white dark:bg-[#12151c] rounded-2xl p-6 shadow-lg">
+        <!-- Skill Tags -->
+        <span class="inline-block rounded-full px-3 py-[6px] text-[0.85rem]
+                     bg-[rgba(79,140,255,0.12)] text-[#4f8cff]
+                     mr-1.5 mt-1.5 transition-all duration-200
+                     hover:-translate-y-[1px] hover:scale-[1.03]
+                     hover:bg-[rgba(79,140,255,0.18)]">PHP</span>
+
+        <span class="inline-block rounded-full px-3 py-[6px] text-[0.85rem]
+                     bg-[rgba(79,140,255,0.12)] text-[#4f8cff]
+                     mr-1.5 mt-1.5 transition-all duration-200
+                     hover:-translate-y-[1px] hover:scale-[1.03]
+                     hover:bg-[rgba(79,140,255,0.18)]">Laravel</span>
+
+        <span class="inline-block rounded-full px-3 py-[6px] text-[0.85rem]
+                     bg-[rgba(79,140,255,0.12)] text-[#4f8cff]
+                     mr-1.5 mt-1.5 transition-all duration-200
+                     hover:-translate-y-[1px] hover:scale-[1.03]
+                     hover:bg-[rgba(79,140,255,0.18)]">JavaScript</span>
+
+        <span class="inline-block rounded-full px-3 py-[6px] text-[0.85rem]
+                     bg-[rgba(79,140,255,0.12)] text-[#4f8cff]
+                     mr-1.5 mt-1.5 transition-all duration-200
+                     hover:-translate-y-[1px] hover:scale-[1.03]
+                     hover:bg-[rgba(79,140,255,0.18)]">React</span>
+
+        <span class="inline-block rounded-full px-3 py-[6px] text-[0.85rem]
+                     bg-[rgba(79,140,255,0.12)] text-[#4f8cff]
+                     mr-1.5 mt-1.5 transition-all duration-200
+                     hover:-translate-y-[1px] hover:scale-[1.03]
+                     hover:bg-[rgba(79,140,255,0.18)]">Vue</span>
+
+        <span class="inline-block rounded-full px-3 py-[6px] text-[0.85rem]
+                     bg-[rgba(79,140,255,0.12)] text-[#4f8cff]
+                     mr-1.5 mt-1.5 transition-all duration-200
+                     hover:-translate-y-[1px] hover:scale-[1.03]
+                     hover:bg-[rgba(79,140,255,0.18)]">AWS</span>
+
+        <span class="inline-block rounded-full px-3 py-[6px] text-[0.85rem]
+                     bg-[rgba(79,140,255,0.12)] text-[#4f8cff]
+                     mr-1.5 mt-1.5 transition-all duration-200
+                     hover:-translate-y-[1px] hover:scale-[1.03]
+                     hover:bg-[rgba(79,140,255,0.18)]">Docker</span>
+
+        <span class="inline-block rounded-full px-3 py-[6px] text-[0.85rem]
+                     bg-[rgba(79,140,255,0.12)] text-[#4f8cff]
+                     mr-1.5 mt-1.5 transition-all duration-200
+                     hover:-translate-y-[1px] hover:scale-[1.03]
+                     hover:bg-[rgba(79,140,255,0.18)]">CI/CD</span>
+        <span class="inline-block rounded-full px-3 py-[6px] text-[0.85rem]
+                     bg-[rgba(79,140,255,0.12)] text-[#4f8cff]
+                     mr-1.5 mt-1.5 transition-all duration-200
+                     hover:-translate-y-[1px] hover:scale-[1.03]
+                     hover:bg-[rgba(79,140,255,0.18)]">Kotlin</span>
+        <span class="inline-block rounded-full px-3 py-[6px] text-[0.85rem]
+                     bg-[rgba(79,140,255,0.12)] text-[#4f8cff]
+                     mr-1.5 mt-1.5 transition-all duration-200
+                     hover:-translate-y-[1px] hover:scale-[1.03]
+                     hover:bg-[rgba(79,140,255,0.18)]">Java</span>
+
+        <span class="inline-block rounded-full px-3 py-[6px] text-[0.85rem]
+                     bg-[rgba(79,140,255,0.12)] text-[#4f8cff]
+                     mr-1.5 mt-1.5 transition-all duration-200
+                     hover:-translate-y-[1px] hover:scale-[1.03]
+                     hover:bg-[rgba(79,140,255,0.18)]">DevOps</span>
+        <span class="inline-block rounded-full px-3 py-[6px] text-[0.85rem]
+                     bg-[rgba(79,140,255,0.12)] text-[#4f8cff]
+                     mr-1.5 mt-1.5 transition-all duration-200
+                     hover:-translate-y-[1px] hover:scale-[1.03]
+                     hover:bg-[rgba(79,140,255,0.18)]">MySQL</span>
       </div>
     </section>
 
-    <!-- Work -->
+    <!-- App Features -->
     <section class="mb-20">
-      <h2 class="text-2xl font-semibold mb-6">Selected Work</h2>
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="bg-white dark:bg-[#12151c] rounded-2xl p-6 shadow-lg">
-          <h3 class="font-semibold mb-2">HouseAndz Properties</h3>
-          <p class="text-sm text-gray-600 dark:text-gray-400">
-            Property platform built with PHP and MySQL to simplify buying, selling, and renting workflows.
-          </p>
+      <h2 class="text-2xl font-semibold mb-6">App Features</h2>
+
+      <div class="grid md:grid-cols-2 gap-4">
+        <!-- Feature Pill -->
+        <div class="flex items-center gap-3 rounded-xl px-4 py-3
+                    bg-white dark:bg-[#12151c] shadow-md
+                    transition-all duration-200
+                    hover:-translate-y-[2px] hover:shadow-xl">
+          <div class="w-9 h-9 rounded-full bg-[rgba(79,140,255,0.15)]
+                      text-[#4f8cff] flex items-center justify-center font-semibold">
+            ✓
+          </div>
+          <div>
+            <p class="font-medium text-sm">Secure Authentication</p>
+            <p class="text-xs text-gray-600 dark:text-gray-400">
+              Industry-standard security practices
+            </p>
+          </div>
         </div>
 
-        <div class="bg-white dark:bg-[#12151c] rounded-2xl p-6 shadow-lg">
-          <h3 class="font-semibold mb-2">Dominion Cooperative</h3>
-          <p class="text-sm text-gray-600 dark:text-gray-400">
-            React and Tailwind-based platform for cooperative organisation management.
-          </p>
+        <div class="flex items-center gap-3 rounded-xl px-4 py-3
+                    bg-white dark:bg-[#12151c] shadow-md
+                    transition-all duration-200
+                    hover:-translate-y-[2px] hover:shadow-xl">
+          <div class="w-9 h-9 rounded-full bg-[rgba(79,140,255,0.15)]
+                      text-[#4f8cff] flex items-center justify-center font-semibold">
+            ✓
+          </div>
+          <div>
+            <p class="font-medium text-sm">Fast & Lightweight</p>
+            <p class="text-xs text-gray-600 dark:text-gray-400">
+              Optimised for performance
+            </p>
+          </div>
         </div>
 
-        <div class="bg-white dark:bg-[#12151c] rounded-2xl p-6 shadow-lg">
-          <h3 class="font-semibold mb-2">ViralSweep (Clearer.io)</h3>
-          <p class="text-sm text-gray-600 dark:text-gray-400">
-            Owned and modernised a legacy SaaS platform post-acquisition, improving reliability and deployments.
-          </p>
+        <div class="flex items-center gap-3 rounded-xl px-4 py-3
+                    bg-white dark:bg-[#12151c] shadow-md
+                    transition-all duration-200
+                    hover:-translate-y-[2px] hover:shadow-xl">
+          <div class="w-9 h-9 rounded-full bg-[rgba(79,140,255,0.15)]
+                      text-[#4f8cff] flex items-center justify-center font-semibold">
+            ✓
+          </div>
+          <div>
+            <p class="font-medium text-sm">Offline Support</p>
+            <p class="text-xs text-gray-600 dark:text-gray-400">
+              Works without internet access
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3 rounded-xl px-4 py-3
+                    bg-white dark:bg-[#12151c] shadow-md
+                    transition-all duration-200
+                    hover:-translate-y-[2px] hover:shadow-xl">
+          <div class="w-9 h-9 rounded-full bg-[rgba(79,140,255,0.15)]
+                      text-[#4f8cff] flex items-center justify-center font-semibold">
+            ✓
+          </div>
+          <div>
+            <p class="font-medium text-sm">Modern UI</p>
+            <p class="text-xs text-gray-600 dark:text-gray-400">
+              Clean, intuitive design
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -120,9 +225,24 @@
     <section>
       <h2 class="text-2xl font-semibold mb-4">Contact</h2>
       <div class="bg-white dark:bg-[#12151c] rounded-2xl p-6 shadow-lg space-y-2">
-        <p>Email: <a class="text-blue-600 dark:text-blue-400" href="mailto:Samueladebiyi.g@gmail.com">Samueladebiyi.g@gmail.com</a></p>
-        <p>GitHub: <a class="text-blue-600 dark:text-blue-400" href="https://github.com/Samuel-DA" target="_blank">github.com/Samuel-DA</a></p>
-        <p>LinkedIn: <a class="text-blue-600 dark:text-blue-400" href="https://www.linkedin.com/in/samuel-adebiyi-81728b176" target="_blank">linkedin.com/in/samuel-adebiyi</a></p>
+        <p>Email:
+          <a class="text-blue-600 dark:text-blue-400"
+             href="mailto:Samueladebiyi.g@gmail.com">
+             Samueladebiyi.g@gmail.com
+          </a>
+        </p>
+        <p>GitHub:
+          <a class="text-blue-600 dark:text-blue-400"
+             href="https://github.com/Samuel-DA" target="_blank">
+             github.com/Samuel-DA
+          </a>
+        </p>
+        <p>LinkedIn:
+          <a class="text-blue-600 dark:text-blue-400"
+             href="https://www.linkedin.com/in/samuel-adebiyi-81728b176" target="_blank">
+             linkedin.com/in/samuel-adebiyi
+          </a>
+        </p>
         <p class="pt-4 text-sm text-gray-500">
           <a href="/privacy.html">Privacy Policy</a>
         </p>
@@ -130,7 +250,7 @@
     </section>
 
     <footer class="text-center text-sm text-gray-500 mt-20">
-      © 2026 Samuel Dolapo Adebiyi · Google Play developer verification
+      © 2026 Samuel Dolapo Adebiyi · Full Stack Developer
     </footer>
 
   </div>
