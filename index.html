@@ -1,11 +1,188 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Developer Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Samuel Dolapo Adebiyi — Software Engineer</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #0b0d10;
+      --card: #12151c;
+      --text: #e6e8eb;
+      --muted: #9aa4b2;
+      --accent: #4f8cff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(180deg, #0b0d10, #0e1117);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 80px 24px;
+    }
+
+    header {
+      margin-bottom: 80px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+      letter-spacing: -0.03em;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      color: var(--muted);
+      max-width: 700px;
+    }
+
+    section {
+      margin-bottom: 72px;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: rgba(79,140,255,0.12);
+      color: var(--accent);
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      margin: 6px 6px 0 0;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-top: 80px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-  <h1>Android App Developer</h1>
-  <p>This website is used for Google Play Console developer verification.</p>
-  <p>Contact: yourname@gmail.com</p>
+
+  <div class="container">
+    <header>
+      <h1>Samuel Dolapo Adebiyi</h1>
+      <p class="subtitle">
+        Results-driven Software Engineer specialising in full-stack development,
+        DevOps, and scalable cloud-based systems.
+      </p>
+    </header>
+
+    <section>
+      <h2>About</h2>
+      <div class="card">
+        <p>
+          I’m a software engineer based in London with experience delivering secure,
+          high-performance applications across SaaS, fintech, and enterprise platforms.
+          I enjoy modernising legacy systems, building reliable APIs, and automating
+          infrastructure with a security-first mindset.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Core Skills</h2>
+      <div class="card">
+        <span class="tag">PHP</span>
+        <span class="tag">Laravel</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">React</span>
+        <span class="tag">Vue</span>
+        <span class="tag">AWS</span>
+        <span class="tag">MySQL</span>
+        <span class="tag">SQL Server</span>
+        <span class="tag">Docker</span>
+        <span class="tag">CI/CD</span>
+        <span class="tag">DevOps</span>
+        <span class="tag">REST APIs</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Selected Work</h2>
+      <div class="grid">
+        <div class="card">
+          <strong>HouseAndz Properties</strong>
+          <p>
+            Property platform built with PHP and MySQL to simplify buying,
+            selling, and renting workflows.
+          </p>
+        </div>
+
+        <div class="card">
+          <strong>Dominion Cooperative</strong>
+          <p>
+            Collaborative platform using React and Tailwind to streamline
+            cooperative organisation operations.
+          </p>
+        </div>
+
+        <div class="card">
+          <strong>ViralSweep (Clearer.io)</strong>
+          <p>
+            Took ownership of a legacy SaaS platform post-acquisition,
+            modernising infrastructure and improving deployment reliability.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <div class="card">
+        <p>Email: <a href="mailto:Samueladebiyi.g@gmail.com">Samueladebiyi.g@gmail.com</a></p>
+        <p>Location: London, England (Open to relocation)</p>
+      </div>
+    </section>
+
+    <footer>
+      © 2026 Samuel Dolapo Adebiyi · Used for Google Play developer verification
+    </footer>
+  </div>
+
 </body>
 </html>
