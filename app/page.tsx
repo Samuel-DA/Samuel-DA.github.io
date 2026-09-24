@@ -71,12 +71,6 @@ const projects = [
     stack: ["Laravel", "React", "TypeScript", "Tailwind"],
   },
   {
-    name: "So Said Sommie",
-    type: "Publishing platform",
-    summary: "A responsive publishing platform with rich-text posts, comments, likes, moderation states and Google-assisted sign-in.",
-    stack: ["Laravel", "React", "Inertia", "TipTap"],
-  },
-  {
     name: "Dominion Cooperative",
     type: "Cooperative operations",
     summary: "A cooperative management system that centralises member, finance and administrative workflows with reporting and account recovery.",
